@@ -1,5 +1,5 @@
 FROM alpine/git:latest
-COPY ssh ~/.ssh/  
+COPY $PWD/ca-ssl ~/.ssh/  
 RUN git clone git@github.com:waltdundore/control-repo.git
 
 
